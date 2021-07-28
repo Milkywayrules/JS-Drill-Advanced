@@ -3,26 +3,10 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  mode: "jit",
+  // mode: "jit",
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
-    colors: {
-      transparent: "transparent",
-      current: "currentColor",
-
-      black: colors.black,
-      white: colors.white,
-      gray: colors.blueGray,
-      // red: colors.red,
-      orange: colors.orange,
-      // yellow: colors.amber,
-      // green: colors.emerald,
-      // blue: colors.blue,
-      indigo: colors.indigo,
-      // purple: colors.violet,
-      // pink: colors.pink,
-    },
     fontFamily: {
       st: [
         "Inter",
@@ -58,10 +42,29 @@ module.exports = {
         '"Noto Color Emoji"',
       ],
     },
-    extend: {},
+    extend: {
+      colors: {
+        transparent: "transparent",
+        current: "currentColor",
+
+        black: colors.black,
+        white: colors.white,
+        gray: colors.blueGray,
+        // red: colors.red,
+        orange: colors.orange,
+        yellow: colors.amber,
+        // green: colors.emerald,
+        // blue: colors.blue,
+        // indigo: colors.indigo,
+        // purple: colors.violet,
+        // pink: colors.pink,
+        rose: colors.rose,
+      },
+    },
   },
   variants: { extend: {}, },
   plugins: [
+    // require("@tailwindcss/jit"),
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
   ],
