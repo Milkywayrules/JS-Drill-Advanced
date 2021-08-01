@@ -1,41 +1,41 @@
 /* eslint-disable no-undef */
 /* eslint-disable @typescript-eslint/no-var-requires */
-const colors = require("tailwindcss/colors");
+const colors = require('tailwindcss/colors');
 
 module.exports = {
-  // mode: "jit",
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-  darkMode: "class", // or 'media' or 'class'
+  // mode: 'jit',
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     fontFamily: {
       st: [
-        "Inter",
-        "Roboto",
-        "ui-sans-serif",
-        "system-ui",
-        "-apple-system",
-        "BlinkMacSystemFont",
+        'Inter',
+        'Roboto',
+        'ui-sans-serif',
+        'system-ui',
+        '-apple-system',
+        'BlinkMacSystemFont',
         '"Segoe UI"',
         '"Helvetica Neue"',
-        "Arial",
+        'Arial',
         '"Noto Sans"',
-        "sans-serif",
+        'sans-serif',
         '"Apple Color Emoji"',
         '"Segoe UI Emoji"',
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
       nd: [
-        "Roboto",
-        "ui-sans-serif",
-        "system-ui",
-        "-apple-system",
-        "BlinkMacSystemFont",
+        'Roboto',
+        'ui-sans-serif',
+        'system-ui',
+        '-apple-system',
+        'BlinkMacSystemFont',
         '"Segoe UI"',
         '"Helvetica Neue"',
-        "Arial",
+        'Arial',
         '"Noto Sans"',
-        "sans-serif",
+        'sans-serif',
         '"Apple Color Emoji"',
         '"Segoe UI Emoji"',
         '"Segoe UI Symbol"',
@@ -44,8 +44,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        transparent: "transparent",
-        current: "currentColor",
+        transparent: 'transparent',
+        current: 'currentColor',
 
         black: colors.black,
         white: colors.white,
@@ -62,10 +62,10 @@ module.exports = {
       },
     },
   },
-  variants: { extend: {}, },
+  variants: { extend: {} },
   plugins: [
     // require("@tailwindcss/jit"),
-    require("@tailwindcss/forms"),
-    require("@tailwindcss/aspect-ratio"),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
   ],
 };
