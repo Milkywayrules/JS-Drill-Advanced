@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Item } from '../../defs/topnavbar';
+import { ItemField } from '../../defs/topnavbar';
 
-const TopNavbarItem: React.FC<Item> = ({ text, slug, children }: Item) => {
+const TopNavbarItem: React.FC<ItemField> = ({ text, slug, children }: ItemField) => {
   if (children) {
     return (
       <li>

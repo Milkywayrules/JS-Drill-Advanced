@@ -39,9 +39,10 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build",
+    "build": "craco build && yarn run build:prep-netlify",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:prep-netlify": "cd ../client_build/build && tar -cvzpf tmp.tar.gz * && mv tmp.tar.gz .. && cd .. && tar -xvzpf tmp.tar.gz && rm -r ./build && rm tmp.tar.gz"
   },
   "browserslist": {
     "production": [

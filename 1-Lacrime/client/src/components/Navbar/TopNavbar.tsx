@@ -1,9 +1,9 @@
 import React from 'react';
 import TopNavbarItem from './TopNavbarItem';
-import { Item } from '../../defs/topnavbar';
+import { ItemField } from '../../defs/topnavbar';
 
 interface Props {
-  items: Item[];
+  items: ItemField[];
 }
 
 const TopNavbar: React.FC<Props> = ({ items }: Props) => {

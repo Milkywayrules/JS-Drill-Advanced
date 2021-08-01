@@ -1,9 +1,9 @@
-interface MainItemField {
+interface BaseItemField {
   id: string;
   text: string;
   slug: string;
 }
 
-export interface Item extends MainItemField {
-  children?: Array<MainItemField>;
+export interface ItemField extends BaseItemField {
+  children?: Array<BaseItemField>;
 }
