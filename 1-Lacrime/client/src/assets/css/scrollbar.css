@@ -34,6 +34,24 @@
     scrollbar-width: thin; /* "auto" or "thin" */
     scrollbar-color: gray lightgray; /* scroll thumb and track */
   }
+
+  /* for <main> */
+  main::-webkit-scrollbar {
+    width: 14px; /* width of the entire scrollbar */
+  }
+
+  main::-webkit-scrollbar-track {
+    background: lightgray; /* color of the tracking area */
+  }
+
+  main::-webkit-scrollbar-thumb {
+    background-color: gray; /* color of the scroll thumb */
+  }
+
+  main {
+    scrollbar-width: auto; /* "auto" or "thin" */
+    scrollbar-color: gray lightgray; /* scroll thumb and track */
+  }
 }
 
 body {

@@ -16,10 +16,10 @@ const TopNavbarItem: React.FC<ItemField> = ({ text, slug, children }: ItemField)
   } else {
     return (
       <li>
-        <NavLink className="text-blue-800 bg-purple-100" to={slug}>s{text}</NavLink>
+        <NavLink className="text-blue-800 bg-purple-100" to={slug}>
+          {text}
+        </NavLink>
       </li>
     );
   }
 };
-
-export default TopNavbarItem;
