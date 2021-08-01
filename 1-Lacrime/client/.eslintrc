@@ -16,11 +16,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "react-hooks",
-    "@typescript-eslint"
-  ],
+  "plugins": ["react", "react-hooks", "@typescript-eslint"],
   "rules": {
     "no-empty-pattern": 0,
     "@typescript-eslint/no-empty-interface": 0,
@@ -48,7 +44,7 @@
         },
         "ObjectPattern": { "multiline": true },
         // buat import
-        "ImportDeclaration": "never",
+        "ImportDeclaration": { "multiline": true },
         // buat export
         "ExportDeclaration": {
           "multiline": true,

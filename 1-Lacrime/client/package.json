@@ -38,7 +38,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "craco start",
+    "dev": "craco start",
     "build": "craco build && yarn run build:prep-netlify",
     "test": "craco test",
     "eject": "react-scripts eject",

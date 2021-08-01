@@ -1,0 +1,41 @@
+@media (min-width: 1024px) {
+  /* for all */
+  html::-webkit-scrollbar {
+    width: 14px; /* width of the entire scrollbar */
+  }
+
+  html::-webkit-scrollbar-track {
+    background: lightgray; /* color of the tracking area */
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background-color: gray; /* color of the scroll thumb */
+  }
+
+  html {
+    scrollbar-width: auto; /* "auto" or "thin" */
+    scrollbar-color: gray lightgray; /* scroll thumb and track */
+  }
+
+  /* for nav */
+  nav::-webkit-scrollbar {
+    width: 8px; /* width of the entire scrollbar */
+  }
+
+  nav::-webkit-scrollbar-track {
+    background: lightgray; /* color of the tracking area */
+  }
+
+  nav::-webkit-scrollbar-thumb {
+    background-color: gray; /* color of the scroll thumb */
+  }
+
+  nav {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: gray lightgray; /* scroll thumb and track */
+  }
+}
+
+body {
+  overflow: hidden;
+}

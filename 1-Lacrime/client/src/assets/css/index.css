@@ -1,5 +1,5 @@
-@import "./fonts/inter.css";
-@import "./fonts/roboto.css";
+@import './fonts/inter.css';
+@import './fonts/roboto.css';
 
 /* import tailwind */
 @tailwind base;
