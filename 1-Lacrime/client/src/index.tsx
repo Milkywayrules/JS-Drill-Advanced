@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/css/index.css';
+import './assets/css/scrollbar.css';
 import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
 

@@ -1,7 +1,8 @@
 import React from 'react';
+import { NavLink, Route, Switch } from 'react-router-dom';
+import LeftNavbar from './components/Navbar/LeftNavbar';
 import TopNavbar from './components/Navbar/TopNavbar';
 import Home from './pages/Home';
-import { Switch, Route } from "react-router-dom";
 
 const buildNavItem = <X extends string, Y extends string[]>(name: X, children?: Y) => {
   const formatted = name.toLowerCase().split(' ').join('-');
@@ -44,35 +45,26 @@ const topNavbarItem = topNavbarItems.map((item) => {
   return buildNavItem(item.name);
 });
 
-
-
 const App: React.FC = () => (
-  <>
-    <TopNavbar items={topNavbarItem} />
+  <div className="font-medium text-white bg-gray-900 ">
+    <TopNavbar />
 
-    <h1 className="text-red-200 bg-gray-200">halo!</h1>
-    <h3>babi</h3>
+    <div className="flex h-full">
+      <LeftNavbar />
 
-    <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
 
-      <Route path="/anime/:id">
-        {/* <Home /> */}
-      </Route>
-      <Route path="/anime">
-        {/* <Home /> */}
-      </Route>
+        <Route path="/anime/:id">{/* <Home /> */}</Route>
+        <Route path="/anime">{/* <Home /> */}</Route>
 
-      <Route path="/manga/:id">
-        {/* <Home /> */}
-      </Route>
-      <Route path="/manga">
-        {/* <Home /> */}
-      </Route>
-    </Switch>
-  </>
+        <Route path="/manga/:id">{/* <Home /> */}</Route>
+        <Route path="/manga">{/* <Home /> */}</Route>
+      </Switch>
+    </div>
+  </div>
 );
 
 export default App;
