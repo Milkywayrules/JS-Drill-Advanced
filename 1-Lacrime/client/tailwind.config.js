@@ -52,6 +52,7 @@ module.exports = {
         gray: colors.blueGray,
         // red: colors.red,
         orange: colors.orange,
+        primary: colors.orange,
         yellow: colors.amber,
         // green: colors.emerald,
         // blue: colors.blue,
@@ -60,12 +61,14 @@ module.exports = {
         // pink: colors.pink,
         rose: colors.rose,
       },
+      screens: { fhd: '1920px' },
+      width: { 21: '5.25rem' },
     },
   },
   variants: { extend: {} },
   plugins: [
     // require("@tailwindcss/jit"),
-    require('@tailwindcss/forms'),
+    // require('@tailwindcss/forms'),
     require('@tailwindcss/aspect-ratio'),
   ],
 };
