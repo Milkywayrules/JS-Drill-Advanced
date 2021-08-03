@@ -4,6 +4,7 @@ import {
   CubeIcon,
   NewspaperIcon,
   CogIcon,
+  ChipIcon,
 } from '@heroicons/react/solid';
 
 interface LeftNavbarItems {
@@ -12,6 +13,7 @@ interface LeftNavbarItems {
   icon: JSX.Element;
   attribute: {
     to: string;
+    title: string;
     exact?: boolean;
   };
 }
@@ -25,6 +27,7 @@ export const leftNavbarItems: LeftNavbarItems[] = [
     icon: <HomeIcon className={iconSize} />,
     attribute: {
       to: '/',
+      title: 'Go to Home page',
       exact: true,
     },
   },
@@ -32,24 +35,45 @@ export const leftNavbarItems: LeftNavbarItems[] = [
     id: 2,
     text: 'Anime',
     icon: <CubeTransparentIcon className={iconSize} />,
-    attribute: { to: '/anime' },
+    attribute: {
+      to: '/anime',
+      title: 'Go to Anime page',
+    },
   },
   {
     id: 3,
     text: 'Manga',
     icon: <CubeIcon className={iconSize} />,
-    attribute: { to: '/manga' },
+    attribute: {
+      to: '/manga',
+      title: 'Go to Manga page',
+    },
   },
   {
     id: 4,
     text: 'News',
     icon: <NewspaperIcon className={iconSize} />,
-    attribute: { to: '/news' },
+    attribute: {
+      to: '/news',
+      title: 'Go to News page',
+    },
   },
   {
     id: 5,
     text: 'Settings',
     icon: <CogIcon className={iconSize} />,
-    attribute: { to: '/settings' },
+    attribute: {
+      to: '/settings',
+      title: 'Go to Settings page',
+    },
+  },
+  {
+    id: 6,
+    text: 'Graphql',
+    icon: <ChipIcon className={iconSize} />,
+    attribute: {
+      to: '/graphql',
+      title: 'Go to Graphql playground page',
+    },
   },
 ];

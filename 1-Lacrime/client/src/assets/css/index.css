@@ -8,6 +8,11 @@
 
 @import './scrollbar.css';
 
-/* @layer base {
-} */
-@import './forms.css';
+@layer base {
+  button,
+  a {
+    @apply transition-colors;
+  }
+
+  @import './forms.css';
+}

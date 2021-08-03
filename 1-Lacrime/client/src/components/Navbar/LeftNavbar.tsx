@@ -16,7 +16,7 @@ const LeftNavbar: React.FC<Props> = ({}: Props) => {
             <li key={menu.id}>
               <NavLink
                 {...menu.attribute}
-                className="flex flex-col items-center w-full py-3 text-center rounded bg-gradient-to-br hover:from-yellow-500 hover:to-orange-600 hover:text-white"
+                className="flex flex-col items-center w-full py-3 text-center transition-none rounded bg-gradient-to-br hover:from-yellow-500 hover:to-orange-600 hover:text-white"
                 activeClassName="text-white bg-gradient-to-br from-yellow-500 to-orange-600"
               >
                 {menu.icon}
