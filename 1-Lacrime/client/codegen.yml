@@ -1,5 +1,5 @@
 overwrite: true
-schema: 'https://anilist.co/graphiql'
+schema: ${SCHEMA_URL}
 documents: './src/graphql/**/*.graphql'
 generates:
   ./src/generated/graphql.tsx:
@@ -7,3 +7,10 @@ generates:
       - 'typescript'
       - 'typescript-operations'
       - 'typescript-react-apollo'
+
+  ./src/generated/schema.json:
+    plugins:
+      - introspection
+    config:
+      specifiedByUrl: true
+      schemaDescription: true
