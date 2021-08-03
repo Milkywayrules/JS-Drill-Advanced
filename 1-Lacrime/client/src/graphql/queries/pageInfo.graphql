@@ -1,0 +1,14 @@
+query PageInfo($page: Int, $perPage: Int) {
+  Page(page: $page, perPage: $perPage) {
+    pageInfo {
+      total
+      perPage
+      currentPage
+      lastPage
+      hasNextPage
+    }
+    media {
+      id
+    }
+  }
+}

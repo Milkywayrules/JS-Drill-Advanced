@@ -1,0 +1,41 @@
+query GetMostPopularAnime($page: Int, $perPage: Int) {
+  Page(page: $page, perPage: $perPage) {
+    pageInfo {
+      total
+      perPage
+      currentPage
+      lastPage
+      hasNextPage
+    }
+    media(type: ANIME, sort: POPULARITY_DESC) {
+      id
+      title {
+        romaji
+        english
+        native
+      }
+      type
+      format
+      status
+      description
+      episodes
+      duration
+      coverImage {
+        extraLarge
+        large
+        medium
+        color
+      }
+      bannerImage
+      genres
+      averageScore
+      meanScore
+      popularity
+      isLocked
+      trending
+      favourites
+      isFavourite
+      isAdult
+    }
+  }
+}
