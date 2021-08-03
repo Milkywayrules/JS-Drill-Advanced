@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "@graphql-codegen/cli": "2.0.0",
     "@typescript-eslint/eslint-plugin": "^4.28.5",
     "@typescript-eslint/parser": "^4.28.5",
     "autoprefixer": "^9.8.6",
@@ -12,7 +13,10 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "postcss": "^8.3.6",
     "prettier": "^2.3.2",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "@graphql-codegen/typescript-react-apollo": "3.0.0",
+    "@graphql-codegen/typescript": "2.0.0",
+    "@graphql-codegen/typescript-operations": "2.0.0"
   },
   "dependencies": {
     "@apollo/client": "^3.3.21",
@@ -41,7 +45,8 @@
     "build": "craco build && yarn run build:prep-netlify",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "build:prep-netlify": "cd ../client_build/build && tar -cvzpf tmp.tar.gz * && mv tmp.tar.gz .. && cd .. && tar -xvzpf tmp.tar.gz && rm -r ./build && rm tmp.tar.gz"
+    "build:prep-netlify": "cd ../client_build/build && tar -cvzpf tmp.tar.gz * && mv tmp.tar.gz .. && cd .. && tar -xvzpf tmp.tar.gz && rm -r ./build && rm tmp.tar.gz",
+    "gen": "graphql-codegen --config codegen.yml"
   },
   "browserslist": {
     "production": [

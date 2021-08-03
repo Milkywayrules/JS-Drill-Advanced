@@ -1,0 +1,75 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import { gql } from "@apollo/client";
+
+const query = gql`
+query {
+  Page(page: 12, perPage: 1) {
+    pageInfo {
+      total
+      perPage
+      currentPage
+      lastPage
+      hasNextPage
+    }
+    media {
+      id
+      title {
+        romaji
+        english
+        native
+        userPreferred
+      }
+      type
+      format
+      status
+      description
+      startDate {
+        year
+        month
+        day
+      }
+      endDate {
+        year
+        month
+        day
+      }
+      season
+      seasonYear
+      seasonInt
+      episodes
+      duration
+      chapters
+      volumes
+      source
+      hashtag
+      updatedAt
+      coverImage {
+        extraLarge
+        large
+        medium
+        color
+      }
+      genres
+      synonyms
+      averageScore
+      meanScore
+      popularity
+      trending
+      isAdult
+    }
+  }
+}
+`
