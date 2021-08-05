@@ -1,10 +1,9 @@
 import {
-  HomeIcon,
-  CubeTransparentIcon,
-  CubeIcon,
-  NewspaperIcon,
-  CogIcon,
   ChipIcon,
+  CogIcon,
+  CubeTransparentIcon,
+  HomeIcon,
+  NewspaperIcon,
 } from '@heroicons/react/solid';
 
 interface LeftNavbarItems {
@@ -42,15 +41,6 @@ export const leftNavbarItems: LeftNavbarItems[] = [
   },
   {
     id: 3,
-    text: 'Manga',
-    icon: <CubeIcon className={iconSize} />,
-    attribute: {
-      to: '/manga',
-      title: 'Go to Manga page',
-    },
-  },
-  {
-    id: 4,
     text: 'News',
     icon: <NewspaperIcon className={iconSize} />,
     attribute: {
@@ -59,7 +49,7 @@ export const leftNavbarItems: LeftNavbarItems[] = [
     },
   },
   {
-    id: 5,
+    id: 4,
     text: 'Settings',
     icon: <CogIcon className={iconSize} />,
     attribute: {
@@ -68,7 +58,7 @@ export const leftNavbarItems: LeftNavbarItems[] = [
     },
   },
   {
-    id: 6,
+    id: 5,
     text: 'Graphql',
     icon: <ChipIcon className={iconSize} />,
     attribute: {

@@ -1,6 +1,5 @@
 import { SearchIcon } from '@heroicons/react/solid';
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import favicon64 from '../../assets/images/icons/L-logo-ori.png';
 import { topNavbarItems } from './TopNavbarItems';

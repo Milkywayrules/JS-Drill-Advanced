@@ -5,7 +5,6 @@ import TopNavbar from './components/Navbar/TopNavbar';
 import Anime from './pages/Anime';
 import Graphql from './pages/Graphql';
 import Home from './pages/Home';
-import Manga from './pages/Manga';
 import News from './pages/News';
 import Settings from './pages/Settings';
 
@@ -26,13 +25,6 @@ const App: React.FC = () => (
         </Route>
         <Route path="/anime">
           <Anime />
-        </Route>
-
-        <Route path="/manga/:id">
-          <Manga />
-        </Route>
-        <Route path="/manga">
-          <Manga />
         </Route>
 
         <Route path="/news">
